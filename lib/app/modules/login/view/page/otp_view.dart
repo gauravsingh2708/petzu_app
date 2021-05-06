@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blueprint/app/modules/login/controller/login_controller.dart';
+import 'package:flutter_blueprint/app/utils/string_constants.dart';
 import 'package:get/get.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
@@ -15,7 +16,7 @@ class OtpView extends StatelessWidget {
       backgroundColor: Colors.white,
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
-          elevation: 0,
+          elevation: Dimens.zero,
           iconTheme: IconThemeData(color: Colors.black),
           backgroundColor: Colors.white,
         ),
@@ -23,54 +24,54 @@ class OtpView extends StatelessWidget {
           width: Dimens.screenWidth,
           height: Dimens.screenHeight,
           child: Padding(
-            padding: const EdgeInsets.all(26.0),
+            padding: EdgeInsets.all(Dimens.twentySix),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text('Verify with OTP',style: Styles.boldBlack26,),
+                Text(StringConstants.verifyWithOtp,style: Styles.boldBlack26,),
                 SizedBox(height: Dimens.ten,),
                 Text('sent via sms to ${_controller.number}',style: Styles.grey14,),
                 SizedBox(height: Dimens.fifty,),
                 _otpTextField(context,_controller),
-                Text('Trying to auto-fill OTP 00:14',style: Styles.grey14,),
+                Text(StringConstants.tryingToAutoFill,style: Styles.grey14,),
                 SizedBox(height: Dimens.fifty,),
                 RichText(
                   text: TextSpan(
-                      text: 'Log in using',
+                      text: StringConstants.loginUsing,
                       style: Styles.grey14,
                       children: [
-                        TextSpan(text: '  Password',style: TextStyle(color: ColorsValue.secondaryColor,fontSize: 13),)
+                        TextSpan(text: StringConstants.password,style: TextStyle(color: ColorsValue.secondaryColor,fontSize: Dimens.fourteen),)
                       ]
                   ),
                 ),
                 SizedBox(height: Dimens.fifty,),
                 RichText(
                   text: TextSpan(
-                      text: 'Having trouble in logging?',
+                      text: StringConstants.havingTroubleLogin,
                       style: Styles.grey14,
                       children: [
-                        TextSpan(text: ' Get help ',style: TextStyle(color: ColorsValue.secondaryColor,fontSize: 13),)
+                        TextSpan(text:StringConstants.getHelp,style: TextStyle(color: ColorsValue.secondaryColor,fontSize: Dimens.fourteen),)
                       ]
                   ),
                 ),
-                SizedBox(height: 30,),
+                SizedBox(height: Dimens.thirty,),
                 InkWell(
                   onTap: () {
                     _controller.loginWithOtp();
                   },
                   hoverColor: Colors.blueGrey,
                   child: Container(
-                    height: 56,
-                    width: 350,
+                    height: Dimens.fifty + Dimens.six,
+                    width: Dimens.hundred * Dimens.three + Dimens.fifty,
                     decoration: BoxDecoration(
                       color: _controller.hasError
                           ? ColorsValue.primaryColor
                           : Colors.grey,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(Dimens.five),
                     ),
                     child: Center(
-                        child: Text('Login', style: Styles.white16)),
+                        child: Text(StringConstants.login, style: Styles.white16)),
                   ),
                 ),
               ],
