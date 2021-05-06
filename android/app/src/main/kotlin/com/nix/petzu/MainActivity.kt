@@ -1,4 +1,4 @@
-package com.nix.flutter_blueprint
+package com.nix.petzu
 
 import io.flutter.embedding.android.FlutterActivity
 

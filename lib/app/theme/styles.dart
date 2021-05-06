@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_blueprint/app/theme/theme.dart';
 
+import 'colors_value.dart';
+
 
 /// A chunk of styles used in the application.
 abstract class Styles {
@@ -13,7 +15,7 @@ abstract class Styles {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     accentColorBrightness: Brightness.dark,
-    primaryColor: Colors.lightBlue,
+    primaryColor: ColorsValue.primaryColor,
     backgroundColor: ColorsValue.backgroundColor,
     primarySwatch: const MaterialColor(
       ColorsValue.primaryColorHex,

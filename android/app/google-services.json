@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1003688835386",
+    "project_id": "petzu-98a82",
+    "storage_bucket": "petzu-98a82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003688835386:android:025d9d6528079a7e423803",
+        "android_client_info": {
+          "package_name": "com.nix.petzu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003688835386-ddnp6qk70q6kuoafoune56ccb6p7dpb5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nix.petzu",
+            "certificate_hash": "cde4a1c669e6b7daa27c1396fba89cbce8978019"
+          }
+        },
+        {
+          "client_id": "1003688835386-n8utqgc2i9ho8tp4eqp64qet2n59aqrc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD54giBimHxKdc-xPYJJvGrC-3pH3AMrAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003688835386-n8utqgc2i9ho8tp4eqp64qet2n59aqrc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
