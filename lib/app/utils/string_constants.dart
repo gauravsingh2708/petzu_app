@@ -2,7 +2,7 @@
 
 /// Contains the strings used in the application
 class StringConstants {
-  static const String appName = 'Heat Dance';
+  static const String appName = 'Petzu';
   static const String continueButton = 'Continue';
   static const String login = 'Login';
   static const String orText = '  or  ';
@@ -14,29 +14,4 @@ class StringConstants {
   static const String password = '  Password';
   static const String havingTroubleLogin = 'Having trouble in logging?';
   static const String getHelp = ' Get help ';
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-  static const String
-
-
-
 }
