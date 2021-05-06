@@ -47,40 +47,34 @@ class LoginView extends StatelessWidget {
     ),
   );
   /// This Widget return the logo and tit/e of the app
-  Widget _logoAndTitle() => Row(
-    mainAxisAlignment: MainAxisAlignment.center,
-    crossAxisAlignment: CrossAxisAlignment.end,
-    children: [
-      Container(
-        height: 100,
-        width: 100,
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('assets/img/petzu_login.gif'),
-              fit: BoxFit.cover
-            )
+  Widget _logoAndTitle() => Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Container(
+          height: 100,
+          width: 100,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/img/petzu_login.gif'),
+                fit: BoxFit.cover
+              )
+          ),
         ),
-      ),
-      RichText(
-        text: TextSpan(
-            text: 'P',
-            style: TextStyle(color: ColorsValue.primaryColorRgb,fontSize: 40),
-            children: [
-              TextSpan(text: 'etzu',style: TextStyle(color: Colors.black,fontSize: 40),)
-            ]
-        ),
-      )
-    ],
+
+      ],
+    ),
   );
 
   /// This Widget return which show Login and SignUp title
   Widget _loginAndSignUpTitle() => RichText(
     text: TextSpan(
         text: 'Login',
-        style: Styles.boldBlack22,
+        style: Styles.navy20,
         children: [
           TextSpan(text: '  or  ',style: Styles.black12,),
-          TextSpan(text: 'SignUp',style: Styles.boldBlack22,)
+          TextSpan(text: 'SignUp',style: Styles.navy20,)
         ]
     ),
   );
@@ -91,7 +85,7 @@ class LoginView extends StatelessWidget {
     onChanged: (value)=>con.enableLoginButton(value),
     decoration: InputDecoration(
       labelText: 'Mobile Number',
-      labelStyle: Styles.grey14,
+      labelStyle: Styles.black12,
       border:  OutlineInputBorder(
         borderRadius: BorderRadius.circular(3),
       ),

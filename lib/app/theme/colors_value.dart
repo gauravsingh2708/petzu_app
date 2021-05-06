@@ -22,6 +22,13 @@ abstract class ColorsValue {
 
   static const Color primaryColor = Color(primaryColorHex);
 
+  static const Color secondaryColor = Color(secondaryColorHex);
+
+  static const Color thirdColor = Color(thirdColorHex);
+
+  static const Color fourthColor = Color(fourthColorHex);
+
+
   static const Color lightPink = Color(lightPinkColorHex);
 
   static const Color facebookColor = Color(
@@ -62,7 +69,13 @@ abstract class ColorsValue {
 
   static Color backgroundColor = Colors.white;
 
-  static const int primaryColorHex = 0xFFE75480;
+  static const int primaryColorHex = 0xFF1B262C;
+
+  static const int secondaryColorHex = 0xFF0F4C75;
+
+  static const int thirdColorHex = 0xFF3282B8;
+
+  static const int fourthColorHex = 0xFFBBE1FA;
 
   static const int white70 = 0x70C73D5D;
 

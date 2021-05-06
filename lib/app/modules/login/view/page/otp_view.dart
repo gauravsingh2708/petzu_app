@@ -38,9 +38,9 @@ class OtpView extends StatelessWidget {
                 RichText(
                   text: TextSpan(
                       text: 'Log in using',
-                      style: TextStyle(color: Colors.black,fontSize: 15),
+                      style: Styles.grey14,
                       children: [
-                        TextSpan(text: ' Password',style: TextStyle(color: ColorsValue.primaryColorRgb,fontSize: 15),)
+                        TextSpan(text: '  Password',style: TextStyle(color: ColorsValue.secondaryColor,fontSize: 13),)
                       ]
                   ),
                 ),
@@ -48,9 +48,9 @@ class OtpView extends StatelessWidget {
                 RichText(
                   text: TextSpan(
                       text: 'Having trouble in logging?',
-                      style: TextStyle(color: Colors.black,fontSize: 15),
+                      style: Styles.grey14,
                       children: [
-                        TextSpan(text: ' Get help ',style: TextStyle(color: ColorsValue.primaryColorRgb,fontSize: 15),)
+                        TextSpan(text: ' Get help ',style: TextStyle(color: ColorsValue.secondaryColor,fontSize: 13),)
                       ]
                   ),
                 ),
@@ -65,7 +65,7 @@ class OtpView extends StatelessWidget {
                     width: 350,
                     decoration: BoxDecoration(
                       color: _controller.hasError
-                          ? Colors.black
+                          ? ColorsValue.primaryColor
                           : Colors.grey,
                       borderRadius: BorderRadius.circular(5),
                     ),

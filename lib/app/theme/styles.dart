@@ -381,6 +381,12 @@ abstract class Styles {
     fontWeight: FontWeight.normal,
   );
 
+  static TextStyle navy20 = GoogleFonts.openSans(
+    color: ColorsValue.secondaryColor,
+    fontSize: Dimens.twenty,
+    fontWeight: FontWeight.bold,
+  );
+
   static TextStyle appColor10 = GoogleFonts.openSans(
     color: ColorsValue.primaryColor,
     fontSize: Dimens.ten,
