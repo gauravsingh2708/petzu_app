@@ -7,7 +7,7 @@ import 'package:flutter_blueprint/app/utils/utility.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-/// Main entry of the application
+/// Main entry of the application sb
 void main() async {
   try {
     WidgetsFlutterBinding.ensureInitialized();
